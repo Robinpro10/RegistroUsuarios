@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".VerDatos">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="Datos del Usuario"
+        android:textColor="#2196F3"
+        android:textColorLink="#2196F3"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tvcod"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="Codigo" />
+
+    <TextView
+        android:id="@+id/tvnom"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Nombres" />
+
+    <TextView
+        android:id="@+id/tvape"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:text="Apellidos" />
+
+    <TextView
+        android:id="@+id/tvem"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:text="Email" />
+
+    <TextView
+        android:id="@+id/tvurl"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:text="Url" />
+
+    <Button
+        android:id="@+id/btnver"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Url" />
+
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="463dp" />
+
+</LinearLayout>

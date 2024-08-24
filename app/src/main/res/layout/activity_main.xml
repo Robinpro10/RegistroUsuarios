@@ -1,19 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_vertical|center_horizontal">
 
+    <!-- Título de la aplicación -->
     <TextView
+        android:id="@+id/titulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginBottom="32dp"
+        android:text="Registrar Usuario"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        tools:visibility="visible" />
+    <!-- EditText para ingresar la cedula -->
+    <EditText
+        android:id="@+id/txtDocumento"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Introduca su Numero de documento"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textSize="18sp" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- EditText para ingresar el nombre -->
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Introduca su Nombre"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="18sp" />
+    <!-- EditText para ingresar el Apellido -->
+    <EditText
+        android:id="@+id/txtApellido"
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Introduca su Apellido"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <!-- EditText para ingresar el correo -->
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Introduca el Correo"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="18sp" />
+    <!-- EditText para ingresar la URL -->
+    <EditText
+        android:id="@+id/txtUrl"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_marginBottom="24dp"
+        android:hint="Introduca la URL"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textSize="18sp" />
+
+    <!-- Botón para enviar la inofrmacion -->
+
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="261dp"
+        android:layout_height="61dp"
+        android:layout_marginBottom="24dp"
+        android:text="Enviar Informacion"
+        android:textSize="17sp" />
+</LinearLayout>
